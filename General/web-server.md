@@ -2,7 +2,7 @@
 ######1. A software that gets http requests from clients and returns files like HTML
 ######2. or a physical computer(server) itself that runs the software above
 
-- Main purpose(function): providing static files like images, CSS, Javascript, HTML, etc.
+- Main purpose: providing static files like images, CSS, Javascript, HTML, etc.
 
 - generally provides server-side scripting but it's not the main thing
 

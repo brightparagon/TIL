@@ -25,3 +25,6 @@ And URI is focused on the resource transfered, which makes it easy to understand
 
 4. Connectedness
 ######A resource can be represented by relationship of other resources
+
+###Reference
+https://en.wikipedia.org/wiki/Representational_state_transfer

@@ -24,7 +24,7 @@ And URI is focused on the resource transfered, which makes it easy to understand
 ######It serves only through HTTP Method(POST, GET, PUT, DELETE).
 
 4. Connectedness
-######A resource can be represented by relationship of other resources
+######A resource can be represented and expected by a relationship of other resources we can see in the URI
 
 ###Reference
 https://en.wikipedia.org/wiki/Representational_state_transfer

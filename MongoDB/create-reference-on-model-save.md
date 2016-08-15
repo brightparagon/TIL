@@ -65,3 +65,7 @@ createPostWithUser({
   doc.save(); // finally save a post
 });
 ```
+
+###reference
+
+http://stackoverflow.com/questions/14758761/mongoose-create-reference-on-model-save

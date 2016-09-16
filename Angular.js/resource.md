@@ -33,7 +33,7 @@ angular.module('example-app').controller('resourceController', function($scope, 
   // get all users
   var users = User.query(function() {
     console.log(users);
-  }
+  });
 
   // create a user(1)
   $scope.user = new User();

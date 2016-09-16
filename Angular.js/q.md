@@ -15,11 +15,10 @@ app.factory('PostLoader', ['Post', '$route', '$q', function(Post, $route, $q) {
         } else {
           resolve(post);
         }
-      };
-    };
+      });
+    });
+  };
 }]);
 ```
 
 The another way to use it is like below.
-
-

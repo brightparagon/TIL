@@ -1,4 +1,4 @@
-###$q in AngularJS
+#$q in AngularJS
 #####It is the service which is quite similar to [promise in Javascript](https://github.com/brightlaw/TIL/blob/master/Javascript/promise.md) and can be considered as another version of promises/deferred object of [Kris Kowal's Q](https://github.com/kriskowal/q).
 
 This service can be used in two ways.

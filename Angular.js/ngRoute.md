@@ -18,6 +18,7 @@ Then load the module in our angular app which is maybe app.js.
 angular.module('example.app', ['ngRoute']);
 ```
 Now we are ready to make a SPA with this module. We got two more things to do from now.
+
 1. Routing Configuration that is going to be injected to app.js
 2. The directive, <ng-view></ng-view>, which renders designated HTML files into itself -> SPA
 
@@ -47,8 +48,8 @@ configs.config(['$routeProvider', function($routeProvider) {
 		});
 }]);
 ```
-This defines where each request with a path is matched to HTML and controller.
-Then inject this configuration module into the main app like below.
+This defines where each request with a path is matched to HTML and controller. Then inject this configuration module into the main app like below.
+
 ```javascript
 var app = angular.module('example.blog', ['example.configs']);
 app.controller('mainCtrl', ['$scope', function($scope) {
@@ -56,7 +57,7 @@ app.controller('mainCtrl', ['$scope', function($scope) {
 }]);
 ```
 
-Finally we need a directive for rendering.
+Finally, we need a directive for rendering.
 ```HTML
 <html lang="en" ng-app="example.blog">
   <head>
@@ -82,5 +83,7 @@ Finally we need a directive for rendering.
 
 ###Reference
 [ngRoute](https://docs.angularjs.org/api/ngRoute)
+
 [routeProvider](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)
+
 [Angular Routing - W3Schools](http://www.w3schools.com/angular/angular_routing.asp)

@@ -4,7 +4,7 @@
 ###How to do this?
 For example, we need to define our own function to save a child model automatically when a parent model is saved(I don't know if it is right to call these models a child or parent, anyway a child means a model referenced)
 It would be like this below.
-This is a child model(user model) that is going to be referenced by a parent model(post model here).
+This is the parent model(user model) that is going to be referenced by a child model(post model here).
 ```javascript
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -21,12 +21,12 @@ var userSchema = new Schema({
 });
 module.exports = mongoose.model('User', userSchema);
 ```
-This is an uppper model(parent model, post model) that references a child(user).
+This is the child model(post model) that references a parent(user).
 ```javascript
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var postSchema = new Schema({
-  postedBy: { // this postedBy property can be considered as a child
+  postedBy: { // this postedBy property can be considered as a parent
     type: Schema.Types.ObjectId,
     required: true,
     ref: 'User'
@@ -42,7 +42,7 @@ var postSchema = new Schema({
   tags: [String]
 });
 postSchema.methods.createPostWithUser = function(data, callback){
-  if (data.postedBy) { // save child model first(child is postedBy here)
+  if (data.postedBy) { // save parent model first(parent is postedBy here)
     data.postedBy = User(data.postedBy);
     data.postedBy.save(function(err) {
       // if an error occurred save nothing by passing null

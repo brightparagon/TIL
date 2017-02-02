@@ -20,7 +20,7 @@ var userSchema = new Schema({
 module.exports = mongoose.model('User', userSchema);
 ```
 
-then create another model that is going to refer to User model
+Then create another model that is going to refer to User model
 **post.js**
 ```javascript
 var mongoose = require('mongoose');

@@ -1,7 +1,8 @@
-#How to refer to other models in mongoose?
+# How to refer to other models in mongoose?
 
 First we need to make a model that will be referred by another later.
-###Example
+
+### Example
 **user.js**
 ```javascript
 var mongoose = require('mongoose');

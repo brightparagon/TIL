@@ -1,8 +1,8 @@
-#Passport
-#####It's a node module that simplifies the process of handling authentication in Express. 
-######It provides a way to work with several authentication 'strategies' like logging in with Google, Facebook, Twitter etc.
+# Passport
+##### It's a node module that simplifies the process of handling authentication in Express.
+###### It provides a way to work with several authentication 'strategies' like logging in with Google, Facebook, Twitter etc.
 
-###Usage
+### Usage
 To use this passport module in a web project, the first thing we need to do is to install the module and the strategy using npm.
 
 **Install**
@@ -24,8 +24,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 var User = mongoose.model('User'); // an example schema used to get a user object from MongoDB
 ```
-The local strategy for Passport expects two pieces of data called username and password. 
-But, if you want to use a different property teamed with password instead of username, 
+The local strategy for Passport expects two pieces of data called username and password.
+But, if you want to use a different property teamed with password instead of username,
 you can configure that in an option object with a usernameField property in the strategy definition.
 
 The example code would look like this.
@@ -68,7 +68,7 @@ var passport = require('passport');
 ```
 And then require the passport configure file after importing modules above.
 ```javascript
-require('./models/db'); // to access MongoDB -> User schema 
+require('./models/db'); // to access MongoDB -> User schema
 require('./config/passport'); // make a folder structure your way
 ```
 At last, Passport should be initialized as Express middleware just before the API routes are added.
@@ -77,7 +77,7 @@ app.use(passport.initialize());
 app.use('/api', routesApi);
 ```
 
-###Reference
+### Reference
 https://www.sitepoint.com/user-authentication-mean-stack/
 
 https://www.npmjs.com/package/passport

@@ -1,7 +1,7 @@
-#./bin/www
-#####It's a file containing setup codes & scripts like port number, making & testing server, etc.
+# ./bin/www
+##### It's a file containing setup codes & scripts like port number, making & testing server, etc.
 
-###Example
+### Example
 This looks like below.
 ```javascript
 var app = require('../app');
@@ -16,7 +16,7 @@ server.listen(port);
 ...
 ```
 
-###What is it for?
+### What is it for?
 Making this file outside the main project file makes it possible to set aside specific server codes from app.js file.
 So that app.js file could only have logical codes, not environmental setting codes. It allows to manage the application with various situations like running the app on a different port, testing the app and restarting the app, etc.
 
@@ -32,7 +32,7 @@ We can make our own scripts and this is the example in package.json below.
 }
 ```
 
-###Reference
-[Stack Overflow](http://stackoverflow.com/questions/23169941/what-does-bin-www-do-in-express-4-x)
+### Reference
+http://stackoverflow.com/questions/23169941/what-does-bin-www-do-in-express-4-x
 
-[Stack Overflow](http://stackoverflow.com/questions/36638123/learning-node-js-express-js-whats-the-deal-with-bin-www)
+http://stackoverflow.com/questions/36638123/learning-node-js-express-js-whats-the-deal-with-bin-www

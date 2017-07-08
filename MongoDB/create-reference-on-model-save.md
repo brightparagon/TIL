@@ -1,7 +1,7 @@
-#How to create a child model when a parent model is saved?
-#####Quick Answer: make a custom function on schema, which allows us to access or control the model in another way.
+# How to create a child model when a parent model is saved?
+##### Quick Answer: make a custom function on schema, which allows us to access or control the model in another way.
 
-###How to do this?
+### How to do this?
 For example, we need to define our own function to save a child model automatically when a parent model is saved(I don't know if it is right to call these models a child or parent, anyway a child means a model referenced)
 It would be like this below.
 This is the parent model(user model) that is going to be referenced by a child model(post model here).
@@ -66,6 +66,5 @@ createPostWithUser({
 });
 ```
 
-###reference
-
+### Reference
 http://stackoverflow.com/questions/14758761/mongoose-create-reference-on-model-save

@@ -1,5 +1,5 @@
-#$q in AngularJS
-#####It is the service which is quite similar to [promise in Javascript](https://github.com/brightlaw/TIL/blob/master/Javascript/promise.md) and can be considered as another version of promises/deferred object of [Kris Kowal's Q](https://github.com/kriskowal/q).
+# $q in AngularJS
+##### It is the service which is quite similar to [promise in Javascript](https://github.com/brightlaw/TIL/blob/master/Javascript/promise.md) and can be considered as another version of promises/deferred object of [Kris Kowal's Q](https://github.com/kriskowal/q).
 
 This service can be used in two ways.
 
@@ -45,7 +45,7 @@ For example, we can make the function as a factory or a service in AngularJS(It'
 This $q service that assures a return value can be used very usefully with [Route Provider](http://odetocode.com/blogs/scott/archive/2014/05/20/using-resolve-in-angularjs-routes.aspx).
 With Route Provider we can make sure all data we need in a certain page is fully loaded in a proper order before that page is loaded.
 
-###Reference
+### Reference
 https://docs.angularjs.org/api/ng/service/$q
 
 http://programmingsummaries.tistory.com/345

@@ -1,10 +1,10 @@
-#res.locals
-#####It's an object that contains response local variables. Values stored in this res.locals could be reached in views only during request / response cycle.
+# res.locals
+##### It's an object that contains response local variables. Values stored in this res.locals could be reached in views only during request / response cycle.
 
-###How useful?
+### How useful?
 It would be useful when it is necessary to maintain specific variables like session data(signed-in user) throughout the whole or some views.
 
-###Example
+### Example
 ```javascript
 // express app
 var express = require('express');
@@ -42,9 +42,9 @@ Then, we can use variables attached to res.locals in views like below.
 </div>
 ```
 
-###Reference
-[blog](http://egloos.zum.com/entireboy/v/4794353)
+### Reference
+http://egloos.zum.com/entireboy/v/4794353
 
-[Express.js](http://expressjs.com/en/api.html)
+http://expressjs.com/en/api.html
 
-[Stack Overflow](http://stackoverflow.com/questions/12550067/expressjs-3-0-how-to-pass-res-locals-to-a-jade-view)
+http://stackoverflow.com/questions/12550067/expressjs-3-0-how-to-pass-res-locals-to-a-jade-view

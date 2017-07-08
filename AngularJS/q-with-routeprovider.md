@@ -1,12 +1,12 @@
-#$q with routeProvider(ngRoute)
-#####With ngRoute and $q we can make a reliable server-side router.
+# $q with routeProvider(ngRoute)
+##### With ngRoute and $q we can make a reliable server-side router.
 
-###In what point these two make that happen?
+### In what point these two make that happen?
 With ngRoute alone, it is only sure that entry paths are matched and linked to HTML files. In other words if there is something wrong with a server that needs to return data or other problems happen there, front pages won't be displayed correctly because data is not set.
 
 We can avoid this kind of situation by using $q service with ngRoute. Because we can define how our application reacts to requests depending on the results from $q. If data returns successfully when a certain request arrives with a path this makes sure that data is fully set up before whole front things like HTML, CSS, Javascript are displayed.
 
-###How to make it?
+### How to make it?
 Here is a example code from my MEAN project.
 
 ```javascript
@@ -49,7 +49,7 @@ app.controller('listPostCtrl', ['$scope', 'posts', function($scope, posts) {
 ```
 The parameter called 'posts' above in the controller is the data retrieved by $q in the factory. This way, we can make sure data is fully set before front things are rendered and react appropriately to errors when occurred.
 
-###Reference
+### Reference
 https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
 
 https://docs.angularjs.org/api/ng/service/$q

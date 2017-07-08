@@ -1,6 +1,6 @@
-#How to connect to AWS EC2 instance from a local through ssh
+# How to connect to AWS EC2 instance from a local through ssh
 
-###Prerequisites
+### Prerequisites
 1. Install an SSH Client
 2. Install the AWS CLI Tools(Optional)
 3. The ID of the instance
@@ -27,7 +27,7 @@ How to reestart an ssh server when needed and logout?
 1. Restart: ``` sudo service ssh restart ```
 2. Logout: ``` logout ```
 
-###What if we fail to connect?
+### What if we fail to connect?
 
 In case of getting a message like **Permission denied (publickey).** from ssh while connecting to instances, type this ssh command to see what happened in instances.
 
@@ -35,7 +35,7 @@ In case of getting a message like **Permission denied (publickey).** from ssh wh
 ssh -vvv -i /path/my-key-pair.pem [User-Name-Of-Instance]@[Public-DNS-Of-Instance]
 ```
 
-###Reference
+### Reference
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 
 http://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html

@@ -1,10 +1,10 @@
-#$rootScope.$broadcast
-#####This is a service of rootScope that dispatches an event to all child scopes and even their children with a certain name.
+# $rootScope.$broadcast
+##### This is a service of rootScope that dispatches an event to all child scopes and even their children with a certain name.
 
-###Why use this?
+### Why use this?
 It becomes possible to make a function do something when a certain event occurs with this service.
 
-###Example
+### Example
 This is a basic use of the service.
 ```javascript
 $rootScope.$broadcast('thisEvent');
@@ -33,7 +33,7 @@ app.controller('navCtrl', ['$scope', '$rootScope', '$location', 'authentication'
 }]);
 ```
 
-###Reference
-[$rootScope.$broadcast](https://docs.angularjs.org/api/ng/type/$rootScope.Scope)
+### Reference
+https://docs.angularjs.org/api/ng/type/$rootScope.Scope
 
-[Stack Overflow](http://stackoverflow.com/questions/24830679/why-do-we-use-rootscope-broadcast-in-angularjs)
+http://stackoverflow.com/questions/24830679/why-do-we-use-rootscope-broadcast-in-angularjs

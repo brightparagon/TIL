@@ -1,6 +1,6 @@
-#How to make subdocuments and query(populate) them in Mongoose?
+# How to make subdocuments and query(populate) them in Mongoose?
 
-###How to define in in Schema?
+### How to define in in Schema?
 Let's say there are two models: Owner and Car. This is how to make subdocument schema in Mongoose below.
 ```javascript
 const mongoose = require('mongoose');
@@ -28,8 +28,8 @@ module.exports = mongoose.model('Car', carSchema);
 Here is the schema relationship. One owner can have multiple cars and a car must have only one owner.
 That's why **'cars'** property comes in ownerSchema as an array and **'owner'** property just as normal.
 
-###How to populate them when doing CRUD?
-#####Create
+### How to populate them when doing CRUD?
+##### Create
 When saving an owner first, there's nothing to do additionally. It's the same as saving normal objects. Because at the monent when an onwer is saved, there's no car object attached to the parent(owner).
 
 **create an owner**
@@ -75,7 +75,7 @@ module.exports.createCar = function(req, res, next) {
   });
 };
 ```
-#####Retrieve
+##### Retrieve
 When getting an owner or a car, those need to be populated with the related property.
 
 **get an owner**
@@ -102,10 +102,10 @@ module.exports.getCar = function(req, res, next) {
   });
 };
 ```
-#####Update and Delete
+##### Update and Delete
 These can be done similarly as Create and Retrieve.
 
-###Example with real data
+### Example with real data
 **owner**
 
 db.owners.find()
@@ -122,7 +122,7 @@ db.cars.find()
 ```
 As shown above, the owner named Bill has three cars. 'cars' property(array) includes three ObjectIds which can be found respectively in cars collection. And those three cars has the same ObjectId which is Bill.
 
-###Reference
+### Reference
 http://stackoverflow.com/questions/15208711/mongoose-subdocuments-vs-nested-schema
 
 http://mongoosejs.com/docs/populate.html

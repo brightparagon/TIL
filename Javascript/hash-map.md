@@ -1,7 +1,7 @@
-#Hash Map in Javascript
-Javascript Object is actually hash map with key and value.
+# Hash Map in Javascript
+Javascript Object is actually a hash map with key and value.
 
-###Example
+### Example
 ```javascript
 // make hash map
 let hashmap = {};
@@ -18,7 +18,7 @@ delete hashmap[key1];
 console.log(key2 in hashmap2);
 ```
 
-###Reference
+### Reference
 http://stackoverflow.com/questions/8877666/how-is-a-javascript-hash-map-implemented
 
 http://stackoverflow.com/questions/4246980/how-to-create-a-simple-map-using-javascript-jquery

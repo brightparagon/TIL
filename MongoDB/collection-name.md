@@ -1,4 +1,4 @@
-#How is the collection name is set in MongoDB?
+# How is the collection name is set in MongoDB?
 
 There are serveral naming conventions
 * **lowercase** : MongoDB collection names are case-sensitive. Basically, when the schema is set the name of **it is determined in lowercase**.
@@ -33,8 +33,8 @@ var userSchema = new Schema({
 
 module.exports = mongoose.model('User', userSchema);
 ```
-When it it exported the default name of this user schema is going to be 'users'. 
+When it it exported the default name of this user schema is going to be 'users'.
 So you can check this typing `db.users.find()` in MongoDB shell.
 
-###Reference
+### Reference
 http://stackoverflow.com/questions/9868323/is-there-a-convention-to-name-collection-in-mongodb

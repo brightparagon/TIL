@@ -1,13 +1,13 @@
-#JSON Web Token
-####It's an open standard that defines a self-contained way for transmitting information securely between parties as a JSON object.
-#####Specifically, it is like this
+# JSON Web Token
+#### It's an open standard that defines a self-contained way for transmitting information securely between parties as a JSON object.
+##### Specifically, it is like this
 * Generate a token(jwt) when a new user is registered or return a token when a registered user logged in
 * This token is encrypted with a specific hashing algorithm like HMAC, sha256 and includes the user object(information)
 * It is then checked by a middleware in Express(server) and decrypted & decoded into an usable json object
 * This ojbect is going to be rendered in HTML files
 
 
-###Usage
+### Usage
 To use this module in a web project, we need to install this first. So run this on the command line.
 ```javascript
 npm install jsonwebtoken --save
@@ -29,7 +29,7 @@ userSchema.methods.generateJwt = function() {
   return jwt.sign({
     _id: this._id, // ObjectId
     email: this.email, // object property
-    name: this.name, 
+    name: this.name,
     exp: parseInt(expiry.getTime() / 1000) // expiry
   }, "shhhhh"); // It is recommended to have a secret key as the environment variable in the server
 };
@@ -37,7 +37,7 @@ userSchema.methods.generateJwt = function() {
 We can add properties needed in the jwt.sign() function.
 
 Now we need to utilize jwt in API end points to protect paths.
-###Example
+### Example
 If we need to make a route for registering a new user, the register method in the server-side would look like this.
 ```javascript
 var mongoose = require('mongoose');
@@ -76,7 +76,7 @@ var auth = jwt({
 router.get('/api/pageToProtect', auth, ctrlOfpageToProtect);
 ```
 
-###Reference
+### Reference
 https://www.sitepoint.com/user-authentication-mean-stack/
 
 https://www.npmjs.com/package/jsonwebtoken

@@ -1,9 +1,9 @@
-#Function Declaration vs Expression
+# Function Declaration vs Expression
 
-###What is a function in javascript?
+### What is a function in javascript?
 It is 'First-Class-Object' that can include variables and functions like a class, also can be assigned to a variable, can be passed as a parameter to another function, can be made in runtime. It seems it acts like everything.
 
-###What's the difference between function declaration and expression?
+### What's the difference between function declaration and expression?
 **Function Declaration**
 It is also called function statement. It's literally declaration of a function. So, just by declaring a function doesn't do anything like returning something but being hoisted. Once a function is declared it is automatically hoisted to the root scope(top). So it can be reached anywhere like a global variable.
 
@@ -45,9 +45,9 @@ The first and second way assign a function to the variable called exp. So, when 
 
 But when the last one(self invoking) is executed it is called right away so we can see 'exp' in our monitor.
 
-###Reference
-[Blog](http://insanehong.kr/post/javascript-function/)
+### Reference
+http://insanehong.kr/post/javascript-function/
 
-[Blog](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
+https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/
 
-[Stack Overflow](http://stackoverflow.com/questions/1013385/what-is-the-difference-between-a-function-expression-vs-declaration-in-javascrip)
+http://stackoverflow.com/questions/1013385/what-is-the-difference-between-a-function-expression-vs-declaration-in-javascrip

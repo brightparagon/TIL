@@ -1,7 +1,7 @@
-#ngRoute(routeProvider)
-#####It's a module that provides routing services and directives for angular apps. And this is a great tool for making SPA(Single Page Application). This is similar to [UI-Router](https://angular-ui.github.io/ui-router/) and works similarly too.
+# ngRoute(routeProvider)
+##### It's a module that provides routing services and directives for angular apps. And this is a great tool for making SPA(Single Page Application). This is similar to [UI-Router](https://angular-ui.github.io/ui-router/) and works similarly too.
 
-###How to apply this into our apps?
+### How to apply this into our apps?
 First, we need to install this module using npm like below.
 ```javascript
 npm install angular-route
@@ -81,9 +81,9 @@ Finally, we need a directive for rendering.
 </html>
 ```
 
-###Reference
-[ngRoute](https://docs.angularjs.org/api/ngRoute)
+### Reference
+https://docs.angularjs.org/api/ngRoute
 
-[routeProvider](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)
+https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
 
-[Angular Routing - W3Schools](http://www.w3schools.com/angular/angular_routing.asp)
+http://www.w3schools.com/angular/angular_routing.asp

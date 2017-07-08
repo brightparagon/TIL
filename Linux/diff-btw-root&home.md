@@ -1,4 +1,4 @@
-## Root Directory
+# Root Directory
 
 > the directory on Unix-like OS(including Linux) that contains all other directories and files
 > designated by a forward slash(/)
@@ -12,7 +12,7 @@
 cd /
 ```
 
-## Home Directory
+# Home Directory
 
 > the directory that serves as the repository for a user
 > designated by a tilde(~)

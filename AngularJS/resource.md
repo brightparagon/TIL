@@ -1,10 +1,10 @@
-#ngResource($resource)
-#####It is an angular-based factory that makes a resource object that enables us to communicates with a server-side data [restfully](https://en.wikipedia.org/wiki/Representational_state_transfer).
+# ngResource($resource)
+##### It is an angular-based factory that makes a resource object that enables us to communicates with a server-side data [restfully](https://en.wikipedia.org/wiki/Representational_state_transfer).
 In other words, we can retrieve all or a certain data, create, delete, update data object which is JSON here by using it.
 
 **The basic form** is like this : ```$resource(url, [paramDefaults], [actions], options);```
 
-###How to use it?
+### How to use it?
 Firstly, we need to install it locally or globally(using -g option)
 
 **Install**
@@ -103,8 +103,7 @@ function signUp(req, res, next) {
 module.exports = router;
 ```
 
-###Reference
-
+### Reference
 https://docs.angularjs.org/api/ngResource/service/$resource
 
 https://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/

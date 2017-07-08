@@ -1,6 +1,6 @@
-#Angular Material Basic Layout on HTML
+# Angular Material Basic Layout on HTML
 
-###How does Angular Material's layout work?
+### How does Angular Material's layout work?
 **layout="row"**
 html components in a div with layout="row" would be laid horizontally like below
 ```html
@@ -24,7 +24,7 @@ This is going to be
 **C**
 **D**
 
-###To be responsive
+### To be responsive
 There are numerous layout sizes for the case where the size of device extends or shrinks
 For example, layout-xs, layout-sm, layout-gt-sm ... etc.
 xs, sm, gt .. stand for extra-small, small, greater than small each.
@@ -38,5 +38,5 @@ xs, sm, gt .. stand for extra-small, small, greater than small each.
 In this case, the layout would be set as a column as the default.
 But, when the size of device extends more than large it would be changing to layout-lg which will pose components horizontally.
 
-###Reference
+### Reference
 https://material.angularjs.org/latest/layout/container
